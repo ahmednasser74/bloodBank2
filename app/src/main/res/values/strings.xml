@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Blood Bank</string>
+    <string name="skip">skip</string>
+    <string name="Forget_password">forget password</string>
+    <string name="login">login</string>
+    <string name="create_account">create account</string>
+    <string name="create_new_account">create new account</string>
+    <string name="slider_desc">this is the description of slider adapter</string>
+    <string name="notification_setting_cv">please select the governorate and blood type which you want to notified</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

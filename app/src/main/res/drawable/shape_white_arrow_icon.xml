@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="40dp"
+        android:height="40dp"
+        android:drawable="@drawable/shape_orange_circle" />
+    <item
+        android:id="@+id/done_with_cyrcle"
+        android:drawable="@drawable/ic_white_arrow_right_slider_24dp"
+        android:gravity="center" />
+
+</layer-list>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/notification_fragment_setting_cv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_16dp"
+                android:background="@drawable/shape_search_btn"
+                app:cardCornerRadius="@dimen/dim_16dp">
+
+                <TextView
+                    android:id="@+id/notification_fragment_setting_tv_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dim_16dp"
+                    android:text="@string/notification_setting_cv"
+                    android:textColor="#9A0B0B"
+                    android:textSize="24sp" />
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/notification_fragment_setting_rel_blood_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notification_fragment_setting_cv_text">
+
+
+                <RelativeLayout
+                    android:id="@+id/notification_fragment_setting_rel_btn_blood_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dim_16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="@dimen/dim_16dp"
+                    android:background="@drawable/shape_orange_btn"
+                    android:paddingTop="@dimen/dim_8dp">
+
+                    <ImageView
+                        android:id="@+id/notification_fragment_setting_img_blood_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_16dp"
+                        android:layout_marginEnd="@dimen/dim_16dp"
+                        android:background="@drawable/ic_plus"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/notification_fragment_setting_img_blood_type"
+                        android:fontFamily="@font/shekari_font"
+                        android:text="Blood Type"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/notification_fragment_setting_rel_btn_blood_type"
+                    android:layout_marginStart="@dimen/dim_16dp"
+                    android:layout_marginEnd="@dimen/dim_16dp"
+                    android:visibility="gone"
+                    android:id="@+id/notification_fragment_setting_rel_blood_recycler"
+                    android:layout_marginBottom="@dimen/dim_16dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/notification_fragment_setting_rv_blood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_search_btn"
+                        app:cardCornerRadius="@dimen/dim_16dp"
+                        tools:listitem="@layout/item_notification_setting" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/notification_fragment_setting_rel_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notification_fragment_setting_rel_blood_type">
+
+                <RelativeLayout
+                    android:id="@+id/notification_fragment_setting_rel_btn_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dim_16dp"
+                    android:layout_marginTop="@dimen/dim_8dp"
+                    android:layout_marginEnd="@dimen/dim_16dp"
+                    android:background="@drawable/shape_orange_btn"
+                    android:paddingTop="@dimen/dim_8dp">
+
+                    <ImageView
+                        android:id="@+id/notification_fragment_setting_img_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_16dp"
+                        android:layout_marginEnd="@dimen/dim_16dp"
+                        android:background="@drawable/ic_plus"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/notification_fragment_setting_img_city"
+                        android:fontFamily="@font/shekari_font"
+                        android:text="City"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/notification_fragment_setting_rel_btn_city"
+                    android:layout_marginStart="@dimen/dim_16dp"
+                    android:layout_marginEnd="@dimen/dim_16dp"
+                    android:layout_marginBottom="@dimen/dim_16dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/notification_fragment_setting_rv_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_search_btn"
+                        app:cardCornerRadius="@dimen/dim_16dp"
+                        tools:listitem="@layout/item_notification_setting" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/notification_fragment_setting_btn_save"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notification_fragment_setting_rel_city"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dim_16dp"
+                android:layout_marginTop="@dimen/dim_16dp"
+                android:background="@drawable/shape_orange_btn"
+                android:text="save"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

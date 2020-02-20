@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/fragment_slider_tv_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_80dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Create New Account"
+        android:textColor="#fff"
+        android:textSize="@dimen/dim_30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_slider_tv_create_account">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_16dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et"
+                android:paddingStart="@dimen/dim_16dp"
+                android:paddingEnd="@dimen/dim_16dp"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_person_outline_black_24dp"
+                    android:hint=" Name"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_fragment_et_name"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+                    android:hint="  E-mail "
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingEnd="@dimen/dim_16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_ti_last_birth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_below="@id/register_fragment_et_email"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_16dp"
+                        android:layout_marginTop="@dimen/dim_16dp"
+                        android:src="@drawable/ic_calendar_week_solid" />
+
+                    <TextView
+                        android:id="@+id/register_fragment_et_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50dp"
+                        android:hint="Birthday Date"
+                        android:paddingStart="@dimen/dim_4dp"
+                        android:paddingTop="@dimen/dim_16dp"
+                        android:paddingEnd="@dimen/dim_40dp"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_et_blood_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_below="@id/register_fragment_ti_last_birth"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingTop="@dimen/dim_10dp"
+                    android:paddingEnd="@dimen/dim_16dp">
+
+                    <ImageView
+                        android:id="@+id/register_fragment_sp_blood_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/ic_drop_solid" />
+
+                    <Spinner
+                        android:id="@+id/register_fragment_Sp_blood_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_horizontal"
+                        android:paddingStart="@dimen/dim_16dp"
+                        android:paddingEnd="@dimen/dim_16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/ic_spinner_downward_black_24dp" />
+                </RelativeLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_ti_last_donate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_below="@id/register_fragment_et_blood_type"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_16dp"
+                        android:layout_marginTop="@dimen/dim_16dp"
+                        android:src="@drawable/ic_calendar_week_solid" />
+
+                    <TextView
+                        android:id="@+id/register_fragment_et_last_donate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_50dp"
+                        android:hint="Last Donation"
+                        android:paddingStart="@dimen/dim_4dp"
+                        android:paddingTop="@dimen/dim_16dp"
+                        android:paddingEnd="@dimen/dim_40dp"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_et_governorate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_below="@id/register_fragment_ti_last_donate"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingTop="@dimen/dim_10dp"
+                    android:paddingEnd="@dimen/dim_16dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/ic_red_home_black_24dp" />
+
+                    <Spinner
+                        android:id="@+id/register_fragment_sp_governorate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_horizontal"
+                        android:paddingStart="@dimen/dim_16dp"
+                        android:paddingEnd="@dimen/dim_16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/ic_spinner_downward_black_24dp" />
+
+
+                </RelativeLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_et_city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/register_fragment_et_governorate"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingTop="@dimen/dim_10dp"
+                    android:paddingEnd="@dimen/dim_16dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/ic_red_home_black_24dp" />
+
+                    <Spinner
+                        android:id="@+id/register_fragment_sp_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:paddingStart="@dimen/dim_16dp"
+                        android:paddingEnd="@dimen/dim_16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/ic_spinner_downward_black_24dp"
+
+                        />
+                </RelativeLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_et_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_fragment_et_city"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et"
+                app:counterEnabled="true"
+                app:counterMaxLength="11"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                    android:hint=" Phone Number "
+                    android:inputType="phone"
+                    android:paddingStart="@dimen/dim_16dp"
+
+                    android:paddingEnd="@dimen/dim_16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_fragment_et_phone_number"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:hint=" Password "
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingEnd="@dimen/dim_16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_et_re_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_fragment_et_password"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_et"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:hint=" Re-password "
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingEnd="@dimen/dim_16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/register_fragment_btn_register"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_fragment_et_re_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginBottom="@dimen/dim_16dp"
+                android:background="@drawable/shape_login_btn"
+                android:text="register" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

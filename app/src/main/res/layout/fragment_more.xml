@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/more_fragment_Tl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_60dp"
+        android:layout_alignParentTop="true"
+        android:background="#9a0b0b"
+        android:gravity="center"
+        android:text="More Setting"
+        android:textColor="#fff"
+        android:textSize="@dimen/dim_30dp" />
+    <!--    <com.google.android.material.tabs.TabLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/dim_60dp"-->
+    <!--        android:background="#9A0B0B"-->
+    <!--        app:tabTextColor="@android:color/white" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/more_fragment_Tl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fragment_more_fav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_16dp">
+
+                <ImageView
+                    android:id="@+id/fragment_more_img_fav"
+                    android:layout_width="@dimen/dim_40dp"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_marginTop="@dimen/dim_4dp"
+                    android:background="@drawable/ic_solid_favorite_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_toEndOf="@id/fragment_more_img_fav"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingEnd="@dimen/dim_16dp"
+                    android:text="Favorite"
+                    android:textColor="#9a0b0b"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/more_fragment_view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/fragment_more_fav"
+                android:layout_marginStart="@dimen/dim_16dp"
+                android:layout_marginEnd="@dimen/dim_16dp"
+                android:background="@drawable/shape_login_btn" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_more_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_fragment_view1"
+                android:layout_margin="@dimen/dim_16dp">
+
+                <ImageView
+                    android:id="@+id/fragment_more_img_contact"
+                    android:layout_width="@dimen/dim_40dp"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_marginTop="@dimen/dim_4dp"
+                    android:background="@drawable/ic_mail_outline_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_toEndOf="@id/fragment_more_img_contact"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingEnd="@dimen/dim_16dp"
+                    android:text="Contact Us"
+                    android:textColor="#9a0b0b"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/more_fragment_view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/fragment_more_contact"
+                android:layout_marginStart="@dimen/dim_16dp"
+                android:layout_marginEnd="@dimen/dim_16dp"
+                android:background="@drawable/shape_login_btn" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_more_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_fragment_view2"
+                android:layout_margin="@dimen/dim_16dp">
+
+                <ImageView
+                    android:id="@+id/fragment_more_img_about"
+                    android:layout_width="@dimen/dim_40dp"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_marginTop="@dimen/dim_4dp"
+                    android:background="@drawable/ic_lamp_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_toEndOf="@id/fragment_more_img_about"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingEnd="@dimen/dim_16dp"
+                    android:text="About App"
+                    android:textColor="#9a0b0b"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/more_fragment_view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/fragment_more_about"
+                android:layout_marginStart="@dimen/dim_16dp"
+                android:layout_marginEnd="@dimen/dim_16dp"
+                android:background="@drawable/shape_login_btn" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_more_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_fragment_view3"
+                android:layout_margin="@dimen/dim_16dp">
+
+                <ImageView
+                    android:id="@+id/fragment_more_img_rate"
+                    android:layout_width="@dimen/dim_40dp"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_marginTop="@dimen/dim_4dp"
+                    android:background="@drawable/ic_star_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_toEndOf="@id/fragment_more_img_rate"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingEnd="@dimen/dim_16dp"
+                    android:text="Rating on App Store"
+                    android:textColor="#9a0b0b"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/more_fragment_view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/fragment_more_rate"
+                android:layout_marginStart="@dimen/dim_16dp"
+                android:layout_marginEnd="@dimen/dim_16dp"
+                android:background="@drawable/shape_login_btn" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_more_notification_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_fragment_view4"
+                android:layout_margin="@dimen/dim_16dp">
+
+                <ImageView
+                    android:id="@+id/fragment_more_img_notification_setting"
+                    android:layout_width="@dimen/dim_40dp"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_marginTop="@dimen/dim_4dp"
+                    android:background="@drawable/ic_red_settings_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_toEndOf="@id/fragment_more_img_notification_setting"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingEnd="@dimen/dim_16dp"
+                    android:text="Notification Setting"
+                    android:textColor="#9a0b0b"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/more_fragment_view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/fragment_more_notification_setting"
+                android:layout_marginStart="@dimen/dim_16dp"
+                android:layout_marginEnd="@dimen/dim_16dp"
+                android:background="@drawable/shape_login_btn" />
+
+
+            <RelativeLayout
+                android:id="@+id/fragment_more_log_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_fragment_view5"
+                android:layout_margin="@dimen/dim_16dp">
+
+                <ImageView
+                    android:id="@+id/fragment_more_img_log_out"
+                    android:layout_width="@dimen/dim_40dp"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_marginTop="@dimen/dim_4dp"
+                    android:background="@drawable/ic_sign_out_alt_solid" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_toEndOf="@id/fragment_more_img_log_out"
+                    android:paddingStart="@dimen/dim_16dp"
+                    android:paddingEnd="@dimen/dim_16dp"
+                    android:text="LogOut"
+                    android:textColor="#9a0b0b"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

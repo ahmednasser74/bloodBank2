@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_item_posts_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dim_16dp"
+    android:layout_marginTop="@dimen/dim_16dp"
+    android:layout_marginEnd="@dimen/dim_16dp"
+    android:layout_marginBottom="@dimen/dim_16dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/fragment_item_posts_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dim_4dp"
+            android:layout_marginEnd="@dimen/dim_4dp"
+            android:background="@drawable/shape_post_txt"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="title"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/fragment_item_posts_img_favorite"
+            android:layout_width="@dimen/dim_50dp"
+            android:layout_height="@dimen/dim_50dp"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:padding="@dimen/dim_4dp"
+            android:src="@drawable/shape_favorite_icon_none" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

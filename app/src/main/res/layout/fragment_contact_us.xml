@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/contact_us_fragment_Tl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_60dp"
+        android:background="#9A0B0B"
+        android:elevation="2dp"
+        app:tabIndicatorColor="@android:color/darker_gray"
+        app:tabSelectedTextColor="#fff"
+        app:tabTextColor="@android:color/darker_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contact_us_fragment_Tl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/contact_us_fragment_Ll_phone_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textColor="#9A0B0B"
+                    android:textSize="30sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_16dp">
+
+                    <ImageView
+                        android:id="@+id/contact_us_fragment_img_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dim_16dp"
+                        android:background="@drawable/ic_orange_phone_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/contact_us_fragment_tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/contact_us_fragment_img_phone"
+                        android:text="01150302040"
+                        android:textColor="#ED5107"
+                        android:textSize="@dimen/dim_24dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8dp"
+                    android:text="Mail"
+                    android:textColor="#9A0B0B"
+                    android:textSize="30sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_16dp">
+
+                    <ImageView
+                        android:id="@+id/contact_us_fragment_img_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dim_16dp"
+                        android:background="@drawable/ic_orange_mail_outline_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/contact_us_fragment_tv_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/contact_us_fragment_img_mail"
+                        android:text="mohamed_nasser@yahoo.com"
+                        android:textColor="#ED5107"
+                        android:textSize="@dimen/dim_20dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_title_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_below="@id/contact_us_fragment_Ll_phone_mail"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_search_btn"
+                android:hint="Title Of Message"
+                android:paddingStart="@dimen/dim_16dp"
+                android:paddingEnd="@dimen/dim_16dp"
+                android:textColorHint="#ED5107" />
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_message"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/contact_us_fragment_et_title_message"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:layout_marginEnd="@dimen/dim_8dp"
+                android:background="@drawable/shape_search_btn"
+                android:gravity="start"
+                android:hint="Message"
+                android:paddingStart="@dimen/dim_16dp"
+                android:paddingTop="@dimen/dim_16dp"
+                android:paddingEnd="@dimen/dim_16dp"
+                android:textColorHint="#ED5107" />
+
+            <Button
+                android:id="@+id/contact_us_fragment_btn_send"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_us_fragment_et_message"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dim_16dp"
+                android:background="@drawable/shape_red_btn"
+                android:text="send"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dim_8dp"
+    android:layout_marginTop="@dimen/dim_10dp"
+    android:layout_marginEnd="@dimen/dim_8dp"
+    app:dragEdge="right"
+    app:mode="normal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/donation_tv_information"
+            android:layout_width="@dimen/dim_40dp"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginStart="@dimen/dim_8dp"
+            android:layout_marginEnd="@dimen/dim_8dp"
+            android:background="@drawable/ic_orange_info_circle_solid" />
+
+        <TextView
+            android:id="@+id/donation_tv_phone"
+            android:layout_width="@dimen/dim_40dp"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginStart="@dimen/dim_8dp"
+            android:layout_marginEnd="@dimen/dim_8dp"
+            android:background="@drawable/ic_local_phone_black_24dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:background="@drawable/shadow_white_shape"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dim_4dp"
+            android:paddingEnd="@dimen/dim_40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/dim_8dp"
+                    android:text="Name :"
+                    android:textColor="#9A0B0B"
+                    android:textSize="@dimen/dim_16dp" />
+
+                <TextView
+                    android:id="@+id/donation_tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_16dp"
+                    android:background="@drawable/shape_et"
+                    android:text="ahmed"
+                    android:textColor="#9A0B0B"
+                    android:textSize="@dimen/dim_16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/dim_8dp"
+                    android:text="Address :"
+                    android:textColor="#9A0B0B"
+                    android:textSize="@dimen/dim_16dp" />
+
+                <TextView
+                    android:id="@+id/donation_tv_hospital_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_16dp"
+                    android:background="@drawable/shape_et"
+                    android:text="haram"
+                    android:textColor="#9A0B0B"
+                    android:textSize="@dimen/dim_16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/dim_8dp"
+                    android:text="City :"
+                    android:textColor="#9A0B0B"
+                    android:textSize="@dimen/dim_16dp" />
+
+                <TextView
+                    android:id="@+id/donation_tv_city_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_16dp"
+                    android:background="@drawable/shape_et"
+                    android:paddingStart="@dimen/dim_4dp"
+                    android:paddingEnd="@dimen/dim_4dp"
+                    android:text="giza"
+                    android:textColor="#9A0B0B"
+                    android:textSize="@dimen/dim_16dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/donation_tv_donation_circle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_red_circle" />
+
+            <TextView
+                android:id="@+id/donation_tv_blood_type"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="A+"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_fragment"
+    android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/notification_list_fragment_Tl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_60dp"
+        android:background="#9A0B0B"
+        app:tabTextColor="@android:color/darker_gray"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/notification_list_fragment_Tl"
+        android:id="@+id/notification_list_fragment_Rv_notification_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_notification_list"/>
+
+</RelativeLayout>
